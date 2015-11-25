@@ -14,6 +14,8 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_helloworld).setOnClickListener(this);
         findViewById(R.id.btn_ui_explorer).setOnClickListener(this);
+        findViewById(R.id.btn_2048).setOnClickListener(this);
+        findViewById(R.id.btn_movies).setOnClickListener(this);
     }
 
     @Override
@@ -25,7 +27,15 @@ public class MainActivity extends Activity implements OnClickListener {
             startActivity(intent);
             break;
         case R.id.btn_ui_explorer:
-            intent = new Intent(this, UIExplorerActivity.class);
+            intent = new Intent(this, DemoUIExplorerActivity.class);
+            startActivity(intent);
+            break;
+        case R.id.btn_2048:
+            intent = new Intent(this, Demo2048Activity.class);
+            startActivity(intent);
+            break;
+        case R.id.btn_movies:
+            intent = new Intent(this, DemoMoviesActivity.class);
             startActivity(intent);
             break;
 
