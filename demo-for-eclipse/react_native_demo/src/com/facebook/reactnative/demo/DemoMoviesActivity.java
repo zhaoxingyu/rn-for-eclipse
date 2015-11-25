@@ -24,7 +24,7 @@ import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 
-public class UIExplorerActivity extends Activity implements DefaultHardwareBackBtnHandler {
+public class DemoMoviesActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
   private ReactInstanceManager mReactInstanceManager;
 
@@ -36,14 +36,14 @@ public class UIExplorerActivity extends Activity implements DefaultHardwareBackB
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
         .setBundleAssetName("UIExplorerApp.android.bundle")
-        .setJSMainModuleName("Examples/UIExplorer/UIExplorerApp.android")
+        .setJSMainModuleName("Examples/Movies/MoviesApp.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)
         .setInitialLifecycleState(LifecycleState.RESUMED)
         .build();
 
     ((ReactRootView) findViewById(R.id.react_root_view))
-        .startReactApplication(mReactInstanceManager, "UIExplorerApp", null);
+        .startReactApplication(mReactInstanceManager, "MoviesApp", null);
   }
 
   @Override
