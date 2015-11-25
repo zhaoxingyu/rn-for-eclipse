@@ -8,11 +8,13 @@ var {
 } = React;
 
 var SwitchAndroidExample = require('./SwitchExample');
+/*var AccountPrivacyExample = require('./AccountPrivacyExample');*/
 
 var PrivateSettingPage = React.createClass({
   render: function() {
     return (
     	<SwitchAndroidExample/>
+    	/*<AccountPrivacyExample/>*/
    );
  }
 });
