@@ -16,6 +16,7 @@ public class MainActivity extends Activity implements OnClickListener {
         findViewById(R.id.btn_ui_explorer).setOnClickListener(this);
         findViewById(R.id.btn_2048).setOnClickListener(this);
         findViewById(R.id.btn_movies).setOnClickListener(this);
+        findViewById(R.id.btn_private_setting).setOnClickListener(this);
     }
 
     @Override
@@ -38,7 +39,10 @@ public class MainActivity extends Activity implements OnClickListener {
             intent = new Intent(this, DemoMoviesActivity.class);
             startActivity(intent);
             break;
-
+        case R.id.btn_private_setting:
+            intent = new Intent(this, PrivateSettingActivity.class);
+            startActivity(intent);
+            break;
         default:
             break;
         }

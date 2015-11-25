@@ -32,6 +32,7 @@
         <activity android:name=".Demo2048Activity" />
         <activity android:name=".DemoMoviesActivity" />
         <activity android:name=".HelloWorld" />
+        <activity android:name=".PrivateSettingActivity" />
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 
