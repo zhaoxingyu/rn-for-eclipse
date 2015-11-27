@@ -9,10 +9,10 @@
 
 package com.facebook.react;
 
-import javax.annotation.Nullable;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.annotation.Nullable;
 
 import android.app.Activity;
 import android.app.Application;
