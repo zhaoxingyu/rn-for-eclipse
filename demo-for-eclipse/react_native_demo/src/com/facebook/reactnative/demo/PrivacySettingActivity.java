@@ -35,7 +35,7 @@ public class PrivacySettingActivity extends Activity implements DefaultHardwareB
 
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
-//        .setBundleAssetName("PrivacySetting.android.bundle")
+        .setBundleAssetName("privacySetting.android.bundle")
         .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/Setting/privacySetting.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)

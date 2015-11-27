@@ -35,7 +35,7 @@ public class SecuritySettingActivity extends Activity implements DefaultHardware
 
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
-//        .setBundleAssetName("SecuritySetting.android.bundle")
+        .setBundleAssetName("securitySetting.android.bundle")
         .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/Setting/securitySetting.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)

@@ -1166,29 +1166,28 @@ GLOBAL.document.createElement = null;}
 
 GLOBAL.MutationObserver = undefined;})(
 this);
-__d('AwesomeProject/js/PrivateSetting/PrivateSettingPage.android.js',function(global, require, module, exports) {  'use strict';
+__d('AwesomeProject/js/Setting/privacySetting.android.js',function(global, require, module, exports) {  'use strict';
 var React=require('react-native/Libraries/react-native/react-native.js');var 
 
 AppRegistry=
 
 
 
-React.AppRegistry;var StyleSheet=React.StyleSheet;var Text=React.Text;var View=React.View;
 
-var SwitchAndroidExample=require('AwesomeProject/js/PrivateSetting/SwitchExample.js');
+React.AppRegistry;var StyleSheet=React.StyleSheet;var Text=React.Text;var Image=React.Image;var View=React.View;
 
+var PrivacySettingPage=require('AwesomeProject/js/Setting/PrivacySetting.js');
 
-var PrivateSettingPage=React.createClass({displayName:'PrivateSettingPage',
+var PrivacySetting=React.createClass({displayName:'PrivacySetting',
 render:function(){
 return (
-React.createElement(SwitchAndroidExample,null));}});
+React.createElement(PrivacySettingPage,null));}});
 
 
 
 
-
-AppRegistry.registerComponent('PrivateSettingPage',function(){return PrivateSettingPage;});
-module.exports = PrivateSettingPage;
+AppRegistry.registerComponent('PrivacySetting',function(){return PrivacySetting;});
+module.exports = PrivacySetting;
 });
 __d('react-native/Libraries/react-native/react-native.js',function(global, require, module, exports) {  'use strict';
 
@@ -55436,7 +55435,7 @@ Object.keys(componentOrElement));}
 
 module.exports = findDOMNode;
 });
-__d('AwesomeProject/js/PrivateSetting/SwitchExample.js',function(global, require, module, exports) {  'use strict';
+__d('AwesomeProject/js/Setting/PrivacySetting.js',function(global, require, module, exports) {  'use strict';
 
 
 
@@ -55450,7 +55449,7 @@ var PageBlock=require('PageBlock');
 var PageView=require('PageView');
 var SwitchItem=require('SwitchItem');
 
-var SwitchExample=React.createClass({displayName:'SwitchExample',
+var PrivacySettingPage=React.createClass({displayName:'PrivacySettingPage',
 
 getInitialState:function(){
 return {
@@ -55497,7 +55496,7 @@ React.createElement(SwitchItem,{title:'我关注的人'}))));}});
 
 
 
-module.exports = SwitchExample;
+module.exports = PrivacySettingPage;
 });
 __d('PageBlock',function(global, require, module, exports) {  'use strict';
 
@@ -55615,7 +55614,8 @@ var React=require('react-native/Libraries/react-native/react-native.js');var
 ScrollView=
 
 
-React.ScrollView;var StyleSheet=React.StyleSheet;var View=React.View;
+
+React.ScrollView;var StyleSheet=React.StyleSheet;var Image=React.Image;var View=React.View;
 
 var PageTitle=require('PageTitle');
 
@@ -55715,8 +55715,8 @@ borderColor:'#C0C0C0'},
 
 text:{
 textAlign:'center',
-fontSize:19,
-fontWeight:'500'}});
+fontSize:18,
+fontWeight:'100'}});
 
 
 
@@ -55745,7 +55745,8 @@ var React=require('react-native/Libraries/react-native/react-native.js');var
 StyleSheet=
 
 
-React.StyleSheet;var Text=React.Text;var View=React.View;
+
+React.StyleSheet;var Text=React.Text;var View=React.View;var TouchableHighlight=React.TouchableHighlight;
 
 var SwitchItem=React.createClass({displayName:'SwitchItem',
 propTypes:{
@@ -55755,6 +55756,7 @@ description:React.PropTypes.string},
 
 render:function(){
 return (
+React.createElement(TouchableHighlight,null,
 React.createElement(View,{style:styles.container},
 React.createElement(View,null,
 React.createElement(Text,{style:styles.titleText},
@@ -55762,7 +55764,8 @@ this.props.title)),
 
 
 React.createElement(View,{style:styles.children},
-this.props.children)));}});
+this.props.children))));}});
+
 
 
 
@@ -55775,19 +55778,22 @@ backgroundColor:'white',
 flexDirection:'row',
 padding:10,
 borderBottomWidth:1,
-borderColor:'#C0C0C0'},
+borderColor:'#E6E6E6'},
 
 text:{
 color:'#333333'},
 
 children:{
 position:'absolute',
-right:10}});
+right:10,
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'center'}});
 
 
 
 module.exports = SwitchItem;
 });
 ;require("InitializeJavaScriptAppEngine");
-;require("AwesomeProject/js/PrivateSetting/PrivateSettingPage.android.js");
-//@ sourceMappingURL=/demo-for-eclipse/react_native_demo/js/PrivateSetting/PrivateSettingPage.android.map?platform=android&dev=true
+;require("AwesomeProject/js/Setting/privacySetting.android.js");
+//@ sourceMappingURL=/demo-for-eclipse/react_native_demo/js/Setting/privacySetting.android.map?platform=android&dev=true

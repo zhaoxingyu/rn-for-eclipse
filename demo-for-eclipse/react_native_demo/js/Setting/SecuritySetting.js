@@ -16,7 +16,7 @@ var SwitchItem = require('SwitchItem');
 var icon_security = require('image!banner_2x');
 var icon_arrow = require('image!common_icon_arrow');
 
-var AccountPrivacyExample = React.createClass({
+var SecuritySettingPage = React.createClass({
 
   render: function() {
 	  
@@ -83,4 +83,4 @@ var styles = StyleSheet.create({
   }
 });
 
-module.exports = AccountPrivacyExample;
+module.exports = SecuritySettingPage;
