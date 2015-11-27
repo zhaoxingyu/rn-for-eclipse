@@ -9,5 +9,9 @@
 	<classpathentry kind="lib" path="exlib/support-annotations-23.0.1.jar"/>
 	<classpathentry kind="lib" path="exlib/support-v4_23.0.1.jar"/>
 	<classpathentry kind="lib" path="exlib/jsr305-3.0.0.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fb_fresco_0.8.1"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fb_fresco_fbcore_0.8.1"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fb_fresco_imagepipeline_0.8.1"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fb_fresco_imagepipeline-okhttp_0.8.1"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
