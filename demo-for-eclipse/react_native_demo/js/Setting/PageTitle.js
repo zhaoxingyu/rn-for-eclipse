@@ -45,8 +45,8 @@ var styles = StyleSheet.create({
   },
   text: {
 	textAlign: 'center',
-    fontSize: 19,
-    fontWeight: '500',
+    fontSize: 18,
+    fontWeight: '100',
   },
 });
 

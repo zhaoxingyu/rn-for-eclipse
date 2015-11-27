@@ -20,6 +20,7 @@ var React = require('react-native');
 var {
   ScrollView,
   StyleSheet,
+  Image,
   View,
 } = React;
 

@@ -24,7 +24,7 @@ import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 
-public class PrivateSettingActivity extends Activity implements DefaultHardwareBackBtnHandler {
+public class PrivacySettingActivity extends Activity implements DefaultHardwareBackBtnHandler {
 
   private ReactInstanceManager mReactInstanceManager;
 
@@ -35,15 +35,15 @@ public class PrivateSettingActivity extends Activity implements DefaultHardwareB
 
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
-        .setBundleAssetName("PrivateSettingPage.android.bundle")
-        .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/PrivateSetting/PrivateSettingPage.android")
+//        .setBundleAssetName("PrivacySetting.android.bundle")
+        .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/Setting/privacySetting.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)
         .setInitialLifecycleState(LifecycleState.RESUMED)
         .build();
 
     ((ReactRootView) findViewById(R.id.react_root_view))
-        .startReactApplication(mReactInstanceManager, "PrivateSettingPage", null);
+        .startReactApplication(mReactInstanceManager, "PrivacySetting", null);
   }
 
   @Override

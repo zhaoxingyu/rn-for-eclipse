@@ -21,6 +21,7 @@ var {
   StyleSheet,
   Text,
   View,
+  TouchableHighlight,
 } = React;
 
 var SwitchItem = React.createClass({
@@ -31,6 +32,7 @@ var SwitchItem = React.createClass({
 	  
 	render:function(){
 		return(
+			<TouchableHighlight>	
 			<View style={styles.container}>
 		        <View>
 		          <Text style={styles.titleText}>
@@ -41,6 +43,7 @@ var SwitchItem = React.createClass({
 		          {this.props.children}
 		        </View>
 	      </View>
+	      </TouchableHighlight>
 		);
 	}
 });
@@ -51,7 +54,7 @@ var styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 10,
     borderBottomWidth: 1,
-    borderColor:'#C0C0C0',
+    borderColor:'#E6E6E6',
   },
   text: {
     color: '#333333',
@@ -59,6 +62,9 @@ var styles = StyleSheet.create({
   children: {
 	position: 'absolute',
     right: 10,
+    flexDirection:'row',
+    alignItems: 'center', 
+    justifyContent: 'center',
   }
 });
 

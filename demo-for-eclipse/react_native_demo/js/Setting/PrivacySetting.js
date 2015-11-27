@@ -12,7 +12,7 @@ var PageBlock = require('PageBlock');
 var PageView = require('PageView');
 var SwitchItem = require('SwitchItem');
 
-var SwitchExample = React.createClass({
+var PrivacySettingPage = React.createClass({
 
   getInitialState : function() {
     return {
@@ -59,4 +59,4 @@ var SwitchExample = React.createClass({
   }
 });
 
-module.exports = SwitchExample;
+module.exports = PrivacySettingPage;

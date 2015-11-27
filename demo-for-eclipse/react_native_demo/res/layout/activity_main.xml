@@ -35,6 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="隐私设置" />
+        <Button
+            android:id="@+id/btn_security_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户安全" />
     </LinearLayout>
 
 </RelativeLayout>
