@@ -35,8 +35,8 @@ public class PrivateSettingActivity extends Activity implements DefaultHardwareB
 
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
-        .setBundleAssetName("PrivateSettingPage.android.bundle")
-        .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/PrivateSetting/PrivateSettingPage.android")
+        .setBundleAssetName("PrivateSettingPage.bundle")
+//        .setJSMainModuleName("demo-for-eclipse/react_native_demo/js/PrivateSetting/PrivateSettingPage.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)
         .setInitialLifecycleState(LifecycleState.RESUMED)

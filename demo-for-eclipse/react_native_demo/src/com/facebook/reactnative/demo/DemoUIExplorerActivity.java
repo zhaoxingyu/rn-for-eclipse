@@ -36,7 +36,7 @@ public class DemoUIExplorerActivity extends Activity implements DefaultHardwareB
     mReactInstanceManager = ReactInstanceManager.builder()
         .setApplication(getApplication())
         .setBundleAssetName("UIExplorerApp.android.bundle")
-        .setJSMainModuleName("Examples/UIExplorer/UIExplorerApp.android")
+//        .setJSMainModuleName("Examples/UIExplorer/UIExplorerApp.android")
         .addPackage(new MainReactPackage())
         .setUseDeveloperSupport(true)
         .setInitialLifecycleState(LifecycleState.RESUMED)

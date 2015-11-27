@@ -26,7 +26,7 @@
   </style>
     <style name="Theme"/>
     <style name="Theme.Catalyst"/>
-    <style name="Theme.Catalyst.RedBox" parent="@style/Theme.AppCompat.DialogWhenLarge">
+    <style name="Theme.Catalyst.RedBox">
     <item name="android:windowBackground">@color/catalyst_redbox_background</item>
     <item name="android:windowAnimationStyle">@style/Animation.Catalyst.RedBox</item>
     <item name="android:inAnimation">@android:anim/fade_in</item>
@@ -34,14 +34,5 @@
     <item name="android:textColor">@android:color/white</item>
   </style>
     <!-- From: file:/D:/git_workspace/react-native/ReactAndroid/src/main/res/shell/values/styles.xml -->
-    <eat-comment/>
-    <style name="Theme.ReactNative.AppCompat.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:textColor">@android:color/black</item>
-    </style>
-    <style name="Theme.ReactNative.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.ReactNative.AppCompat.Light">
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-    </style>
+  <eat-comment/>
 </resources>
