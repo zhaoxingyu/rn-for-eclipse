@@ -1,16 +1,16 @@
 /**
  * The examples provided by Facebook are for non-commercial testing and
  * evaluation purposes only.
- *
+ * 
  * Facebook reserves all rights not expressly granted.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL
- * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
- * AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- *
+ * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ * 
  * @providesModule PageBlock
  * @flow
  */
@@ -30,27 +30,36 @@ var PageBlock = React.createClass({
   },
 
   getInitialState: function() {
-    return {description: (null: ?string)};
+    return {
+    	description: (null: ?string),
+    	title:(null: ?string),
+    };
   },
 
   render: function() {
-    var description;
+    var description,title;
     if (this.props.description) {
       description =
         <Text style={styles.descriptionText}>
           {this.props.description}
         </Text>;
     }
+    if(this.props.title){
+      title=
+    	<Text style={styles.titleText}>
+        	{this.props.title}
+        </Text>
+    }
+    var spacer = this.props.title ? null : <View style={{height:10}} />;
 
     return (
       <View style={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.titleText}>
-            {this.props.title}
-          </Text>
           {description}
+          {title}
+          {spacer}
         </View>
-        <View style={styles.children}>
+        <View>
           {this.props.children}
         </View>
       </View>
@@ -60,45 +69,24 @@ var PageBlock = React.createClass({
 
 var styles = StyleSheet.create({
   container: {
-    /*borderRadius: 3,
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',*/
     backgroundColor: '#ffffff',
-    /*margin: 10,*/
-    /*marginVertical: 5,*/
-    overflow: 'hidden',
+    borderTopWidth: 1,
+    borderColor:'#C0C0C0',
   },
   titleContainer: {
-    /*borderBottomWidth: 0.5,
-    borderTopLeftRadius: 3,
-    borderTopRightRadius: 2.5,
-    borderBottomColor: '#d6d7da',*/
-	height: 30,
-	padding: 7,
+	paddingLeft:10,
     backgroundColor: '#e9eaed',
-    paddingHorizontal: 10,
+  },
+  descriptionText: {
+	marginTop: 10,
+    fontSize: 14,
   },
   titleText: {
     fontSize: 12,
-    /*fontWeight: '100',*/
     color: '#333333',
+    marginTop: 10,
+    marginBottom: 10,
   },
-  descriptionText: {
-    fontSize: 14,
-  },
-  disclosure: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    padding: 10,
-  },
-  disclosureIcon: {
-    width: 12,
-    height: 8,
-  },
-  children: {
-    margin: 10,
-  }
 });
 
 module.exports = PageBlock;

@@ -37,14 +37,11 @@ var PageTitle = React.createClass({
 
 var styles = StyleSheet.create({
   container: {
-    /*borderRadius: 4,
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',
-    margin: 10,
-    marginBottom: 0,*/
     height: 45,
     padding: 10,
     backgroundColor: 'white',
+    borderBottomWidth: 1,
+    borderColor:'#C0C0C0',
   },
   text: {
 	textAlign: 'center',
