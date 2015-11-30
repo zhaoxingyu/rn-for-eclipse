@@ -10,14 +10,14 @@
 package com.facebook.react.views.switchview;
 
 import android.content.Context;
-import android.widget.CheckBox;
+import android.widget.Switch;
 
 /**
  * Switch that has its value controlled by JS. Whenever the value of the switch changes, we do not
  * allow any other changes to that switch until JS sets a value explicitly. This stops the Switch
  * from changing its value multiple times, when those changes have not been processed by JS first.
  */
-/*package*/ class ReactSwitch extends CheckBox {
+/*package*/ class ReactSwitch extends Switch {
 
   private boolean mAllowChange;
 
